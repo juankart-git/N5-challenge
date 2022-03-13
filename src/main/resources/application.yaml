@@ -1,0 +1,23 @@
+spring.jpa.database: POSTGRESQL
+spring.datasource.platform: postgres
+spring.datasource.url: jdbc:postgresql://localhost:5432/N5
+spring.datasource.username: postgres
+spring.datasource.password: admin
+
+ant_path_matcherspring.mvc.pathmatch.matching-strategy: ant_path_matcher
+
+#spring.jpa.show.sql: true
+#spring.jpa.generate-ddl: true
+#spring.jpa.hibernate.ddl-auto: create-drop
+#spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation: true
+
+rout.path.principal: /api/v1
+rout.path.person: /person/
+rout.path.gender: /gender/
+rout.path.documentType: /document_type/
+rout.path.role: /role/
+rout.path.access: /access/
+rout.path.access.role: /access_by_role/
+rout.path.role.user: /role_by_user/
+
+

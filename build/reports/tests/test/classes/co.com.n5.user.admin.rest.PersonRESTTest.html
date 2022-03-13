@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PersonRESTTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PersonRESTTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/co.com.n5.user.admin.rest.html">co.com.n5.user.admin.rest</a> &gt; PersonRESTTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.209s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="retrieveDetailsForCourse()"></a>
+<h3 class="failures">retrieveDetailsForCourse()</h3>
+<span class="code">
+<pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at app//org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at app//javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at app//org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at app//org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at app//javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at app//org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at app//org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at app//org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at app//org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+	at app//org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:199)
+	at app//co.com.n5.user.admin.rest.PersonRESTTest.retrieveDetailsForCourse(PersonRESTTest.java:75)
+	at java.base@11.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.10/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.10/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@11.0.10/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base@11.0.10/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.10/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.10/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.lang.NullPointerException
+	at co.com.n5.user.admin.rest.PersonREST.getAll(PersonREST.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 89 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">retrieveDetailsForCourse()</td>
+<td class="failures">0.209s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>23:27:01.640 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:27:01.685 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:27:01.799 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [co.com.n5.user.admin.rest.PersonRESTTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+23:27:01.832 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [co.com.n5.user.admin.rest.PersonRESTTest], using SpringBootContextLoader
+23:27:01.851 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [co.com.n5.user.admin.rest.PersonRESTTest]: class path resource [co/com/n5/user/admin/rest/PersonRESTTest-context.xml] does not exist
+23:27:01.852 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [co.com.n5.user.admin.rest.PersonRESTTest]: class path resource [co/com/n5/user/admin/rest/PersonRESTTestContext.groovy] does not exist
+23:27:01.853 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [co.com.n5.user.admin.rest.PersonRESTTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:27:01.856 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [co.com.n5.user.admin.rest.PersonRESTTest]: PersonRESTTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:27:02.058 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [co.com.n5.user.admin.rest.PersonRESTTest]
+23:27:02.265 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Proyects\N5\N5_AdminUser\build\classes\java\main\co\com\n5\user\admin\N5UserAdminApplication.class]
+23:27:02.267 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration co.com.n5.user.admin.N5UserAdminApplication for test class co.com.n5.user.admin.rest.PersonRESTTest
+23:27:02.277 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [co.com.n5.user.admin.rest.PersonRESTTest]: using defaults.
+23:27:02.279 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:27:02.338 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@669253b7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5305c37d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@51a06cbe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3dddbe65, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@49a64d82, org.springframework.test.context.support.DirtiesContextTestExecutionListener@344561e0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@66d23e4a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36ac8a63, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@4d9d1b69, org.springframework.test.context.event.EventPublishingTestExecutionListener@52c8295b, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@251f7d26, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@77b21474, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@52d10fb8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@41c07648, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1fe8d51b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@781e7326, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@22680f52]
+23:27:02.352 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2f40a43 testClass = PersonRESTTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3caa4757 testClass = PersonRESTTest, locations = '{}', classes = '{class co.com.n5.user.admin.N5UserAdminApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@48c35007, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7a48e6e2, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@b7ec2a9d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@f3c567b8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3e2943ab, [ImportsContextCustomizer@69c43e48 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@303e3593, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1d9bec4d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@53ed4f84, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+23:27:02.461 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.5)
+
+2022-03-12 23:27:03.976  INFO 19744 --- [    Test worker] c.com.n5.user.admin.rest.PersonRESTTest  : Starting PersonRESTTest using Java 11.0.10 on SBBOGLAPPROJA56 with PID 19744 (started by juan.acosta in C:\Proyects\N5\N5_AdminUser)
+2022-03-12 23:27:03.983  INFO 19744 --- [    Test worker] c.com.n5.user.admin.rest.PersonRESTTest  : No active profile set, falling back to default profiles: default
+2022-03-12 23:27:08.804  INFO 19744 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2022-03-12 23:27:08.805  INFO 19744 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-03-12 23:27:08.809  INFO 19744 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2022-03-12 23:27:08.905  INFO 19744 --- [    Test worker] c.com.n5.user.admin.rest.PersonRESTTest  : Started PersonRESTTest in 6.426 seconds (JVM running for 9.707)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 12/03/2022, 11:27:22 p. m.</p>
+</div>
+</div>
+</body>
+</html>
